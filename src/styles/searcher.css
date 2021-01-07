@@ -1,0 +1,51 @@
+form{
+  margin-right: 12px;
+}
+
+.todo__input{
+  font-size: 1em;
+  color: #bbbbbb;
+  border: none;
+  height: 2em;
+  width: 270px;
+  outline: none;
+  border-radius: 0.5em;
+  padding: 0 15px;
+  background-color: #a8a8a87c;
+  transition-duration: 0.5s;
+  margin-right: 12px;
+}
+
+.todo__input:focus{
+  border: 3px solid rgba(179, 179, 179, 0.705);
+}
+
+.todo__input::placeholder{
+  font-size: 1em;
+  color: #bbbbbb;
+  text-align: start;
+}
+
+.todo__btn{
+  cursor: pointer;
+  padding: 0;
+  font-weight: 900;
+  transition-duration: 0.5s;
+  height: 2em;
+  width: 2em;
+  background-color: #d37925;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  color: #bbbbbb;
+  outline: none;
+}
+
+.todo__btn:hover{
+  color: #d37925;
+  background-color: #bbbbbb;
+}
+
+.todo__btn:focus{
+  transform: scale(1.2);
+}
