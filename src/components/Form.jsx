@@ -5,7 +5,6 @@ import '../styles/searcher.css'
 function Form({ setInputText, inputText, setTodos, todos }) {
 
   const handleInput = (event) => {
-    console.log(event.target.value)
     setInputText(event.target.value)
   }
 
