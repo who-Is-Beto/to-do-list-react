@@ -12,11 +12,12 @@ const ToDo = ({ item, todos, setTodos }) => {
     setTodos(todos.map((element) => {
       if (element.id === item.id) {
         return {
-          ...item,
-          completed: !item.completed
+          ...element,
+          completed: !element.completed
         }
+      } else {
+        return element
       }
-      return item
     }))
   }
 
