@@ -2,7 +2,7 @@ import React from 'react'
 import '../styles/searcher.css'
 
 
-function Form({ setInputText, inputText, setTodos, todos }) {
+function Form({ setInputText, inputText, setTodos, todos, setStatus }) {
 
   const handleInput = (event) => {
     setInputText(event.target.value)
@@ -20,6 +20,10 @@ function Form({ setInputText, inputText, setTodos, todos }) {
     ])
 
     setInputText('')
+  }
+
+  const handleStatus = (event) => {
+    setStatus(event.target.value)
   }
 
   return (
@@ -40,7 +44,7 @@ function Form({ setInputText, inputText, setTodos, todos }) {
       </form>
 
       <div className="filter">
-        <select name="todos" className='filter__todo'>
+        <select onChange={handleStatus} name="todos" className='filter__todo'>
           <option value="all">All</option>
           <option value="completed">Completed</option>
           <option value="uncompleted">Uncompleted</option>
